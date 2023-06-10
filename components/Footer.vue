@@ -4,21 +4,9 @@
       <div class="level">
         <div class="level-left">
           <div class="level-item is-column">
-            <div class="level-subitem footer-address">
-              <div class="footer-address__name">
-                {{ $t('donationsAddress') }}
-              </div>
-              <a
-                class="footer-address__value"
-                target="_blank"
-                :href="addressExplorerUrl(donationsAddress)"
-                rel="noopener noreferrer"
-                >{{ donationsAddress }}</a
-              >
-            </div>
             <div class="level-subitem">
-              Tornado.cash version:
-              <span class="footer-version__value">{{ commit }}</span>
+              Powered by
+              <span class="footer-version__value">0xAlien</span>
             </div>
           </div>
         </div>
@@ -29,31 +17,16 @@
                 <b-button
                   tag="a"
                   type="is-icon"
-                  :href="duneLink"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  icon-right="stats"
+                  icon-right="telegram"
                 ></b-button>
+
                 <b-button
                   tag="a"
                   type="is-icon"
-                  href="https://torn.community"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  icon-right="discourse"
-                ></b-button>
-                <b-button
-                  tag="a"
-                  type="is-icon"
-                  href="https://discord.com/invite/TFDrM8K42j"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  icon-right="discord"
-                ></b-button>
-                <b-button
-                  tag="a"
-                  type="is-icon"
-                  href="https://tornado-cash.medium.com"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   icon-right="medium"
@@ -61,27 +34,12 @@
                 <b-button
                   tag="a"
                   type="is-icon"
-                  href="https://twitter.com/TornadoCash"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   icon-right="twitter"
                 ></b-button>
-                <b-button
-                  tag="a"
-                  type="is-icon"
-                  href="https://t.me/TornadoCashOfficial"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  icon-right="telegram"
-                ></b-button>
-                <b-button
-                  tag="a"
-                  type="is-icon"
-                  href="https://github.com/tornadocash"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  icon-right="github"
-                ></b-button>
+
                 <div class="break"></div>
                 <b-dropdown
                   v-model="$i18n.locale"
@@ -117,30 +75,17 @@
 import { mapGetters } from 'vuex'
 
 import { FlagIcon } from '@/components/icons'
-import { LOCALES_NAMES, DONATIONS_ADDRESS } from '@/constants'
+import { LOCALES_NAMES } from '@/constants'
 
 export default {
   components: {
     FlagIcon
   },
-  data() {
-    return {
-      commit: process.env.commit,
-      donationsAddress: DONATIONS_ADDRESS
-    }
-  },
+
   computed: {
     ...mapGetters('metamask', ['networkConfig', 'netId']),
     ...mapGetters('txHashKeeper', ['addressExplorerUrl']),
-    duneLink() {
-      const mainnetNetworks = [1, 5]
 
-      if (mainnetNetworks.includes(Number(this.netId))) {
-        return 'https://dune.xyz/poma/tornado-cash_1'
-      }
-
-      return 'https://dune.xyz/fennec/Tornado-Cash-Cross-chain-Dashboard'
-    },
     locales() {
       return this.$i18n.availableLocales
     }

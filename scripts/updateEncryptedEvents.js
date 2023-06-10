@@ -4,7 +4,7 @@ import fs from 'fs'
 import { uniqBy } from 'lodash'
 
 import networkConfig from '../networkConfig'
-import ABI from '../abis/TornadoProxy.abi.json'
+import ABI from '../abis/tornadoProxy.abi.json'
 import { getPastEvents, loadCachedEvents } from './helpers'
 
 const EVENTS_PATH = './static/events/'

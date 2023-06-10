@@ -17,16 +17,8 @@ export default {
       switch (this.netId) {
         case 1:
           return 'Ethereum'
-        case 5:
-          return 'Goerli'
         case 56:
           return 'BSC Mainnet'
-        case 137:
-          return 'Polygon Network'
-        case 42161:
-          return 'Arbitrum'
-        case 43114:
-          return 'Avalanche'
         default:
           return this.networkName
       }
@@ -60,7 +52,7 @@ export default {
     height: 2.857em;
     width: 2.857em;
     background-color: #0f1f19;
-    border: 1px solid #94febf;
+    border: 1px solid #ecce8e;
     border-radius: 4px;
 
     &:first-child:not(:last-child) {
@@ -68,7 +60,7 @@ export default {
     }
 
     .trnd {
-      background-color: #94febf;
+      background-color: #ecce8e;
     }
   }
 }

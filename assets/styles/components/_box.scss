@@ -38,7 +38,7 @@
     span.selected {
       border-radius: 4px;
       font-size: 0.75rem;
-      background-color: #0d1f16;
+      background-color: #270722;
       border: 1px solid $primary;
       color: $primary;
       padding: calc(0.375em - 1px) 0.75em;
@@ -62,7 +62,7 @@
         height: 27px;
 
         &:nth-child(odd) {
-          background-color: #171717;
+          background-color: #270722;
         }
       }
 

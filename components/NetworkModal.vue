@@ -127,8 +127,8 @@ export default {
 
   &.is-active {
     .network-checkbox {
-      border-color: #94febf;
-      background-color: #94febf;
+      border-color: #ecce8e;
+      background-color: #ecce8e;
       background-image: url('../assets/img/icons/checkbox.svg');
       background-position: center;
       background-repeat: no-repeat;
@@ -137,7 +137,7 @@ export default {
 
   &:hover {
     .network-checkbox {
-      border-color: #94febf;
+      border-color: #ecce8e;
     }
   }
 }

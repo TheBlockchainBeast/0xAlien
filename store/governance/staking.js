@@ -3,7 +3,7 @@ import { numberToHex, fromWei } from 'web3-utils'
 
 import networkConfig from '@/networkConfig'
 
-import TornadoStakingRewardsABI from '@/abis/TornadoStakingRewards.abi.json'
+import tornadoStakingRewardsABI from '@/abis/tornadoStakingRewards.abi.json'
 
 export const state = () => {
   return {
@@ -20,7 +20,7 @@ export const getters = {
 
     if (address) {
       const web3 = new Web3(url)
-      return new web3.eth.Contract(TornadoStakingRewardsABI, address)
+      return new web3.eth.Contract(tornadoStakingRewardsABI, address)
     }
 
     return null

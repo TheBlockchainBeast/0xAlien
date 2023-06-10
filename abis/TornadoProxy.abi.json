@@ -74,7 +74,7 @@
   {
     "inputs": [
       {
-        "internalType": "contract ITornadoInstance",
+        "internalType": "contract ItornadoInstance",
         "name": "",
         "type": "address"
       }
@@ -114,7 +114,7 @@
     "name": "tornadoTrees",
     "outputs": [
       {
-        "internalType": "contract ITornadoTrees",
+        "internalType": "contract ItornadoTrees",
         "name": "",
         "type": "address"
       }
@@ -125,7 +125,7 @@
   {
     "inputs": [
       {
-        "internalType": "contract ITornadoInstance",
+        "internalType": "contract ItornadoInstance",
         "name": "_tornado",
         "type": "address"
       },
@@ -148,7 +148,7 @@
   {
     "inputs": [
       {
-        "internalType": "contract ITornadoInstance",
+        "internalType": "contract ItornadoInstance",
         "name": "_instance",
         "type": "address"
       },
@@ -166,7 +166,7 @@
   {
     "inputs": [
       {
-        "internalType": "contract ITornadoInstance",
+        "internalType": "contract ItornadoInstance",
         "name": "_tornado",
         "type": "address"
       },

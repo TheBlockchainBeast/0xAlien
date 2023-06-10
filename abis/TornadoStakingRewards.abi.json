@@ -63,7 +63,7 @@
     "name": "Governance",
     "outputs": [
       {
-        "internalType": "contract ITornadoGovernance",
+        "internalType": "contract ItornadoGovernance",
         "name": "",
         "type": "address"
       }

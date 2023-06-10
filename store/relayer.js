@@ -413,7 +413,7 @@ export const actions = {
       }
     }
   },
-  async relayTornadoWithdraw({ state, commit, dispatch, rootState }, { note }) {
+  async relaytornadoWithdraw({ state, commit, dispatch, rootState }, { note }) {
     const { currency, netId, amount, commitmentHex } = parseNote(note)
 
     const config = networkConfig[`netId${netId}`]
@@ -470,7 +470,7 @@ export const actions = {
         throw new Error(this.app.i18n.t('unknownError'))
       }
     } catch (e) {
-      console.error('relayTornadoWithdraw', e)
+      console.error('relaytornadoWithdraw', e)
       const { name, url } = state.selectedRelayer
       throw new Error(this.app.i18n.t('relayRequestFailed', { relayerName: name === 'custom' ? url : name }))
     }

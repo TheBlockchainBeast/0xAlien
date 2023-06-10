@@ -32,7 +32,7 @@ export default {
         return 'application/withdraw'
       }
 
-      return 'relayer/relayTornadoWithdraw'
+      return 'relayer/relaytornadoWithdraw'
     }
   },
   methods: {

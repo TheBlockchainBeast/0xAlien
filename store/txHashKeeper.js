@@ -397,7 +397,7 @@ export const actions = {
     if (type === 'tornado') {
       const [tornado, , , , hexNote] = note.split('-')
       const { commitmentHex } = parseNote(note)
-      tx.prefix = `${tornado}-${currency}-${amount}-${netId}`
+      tx.prefix = `${tornado} -${currency} -${amount} -${netId} `
       tx.isSpent = true
 
       const encryptedTxs = getters.encryptedTxs
@@ -437,7 +437,7 @@ export const actions = {
   async getBlockNumber({ rootState }, { txHash }) {
     try {
       const { netId } = rootState.metamask
-      const { url } = rootState.settings[`netId${netId}`].rpc
+      const { url } = rootState.settings[`netId${netId} `].rpc
 
       const web3 = this.$provider.getWeb3(url)
 

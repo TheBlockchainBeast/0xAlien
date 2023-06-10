@@ -97,9 +97,6 @@
               {{ $t('recipientAddress') }}
             </span>
           </div>
-          <button class="button is-primary-text" @click="insertDonate">
-            {{ $t('donate') }}
-          </button>
         </div>
         <b-input
           v-model="withdrawAddress"
@@ -145,10 +142,9 @@
 <script>
 /* eslint-disable no-console */
 import { mapState, mapGetters } from 'vuex'
-import { getTornadoKeys } from '@/store/snark'
+import { gettornadoKeys } from '@/store/snark'
 
 import { parseNote } from '@/utils'
-import { DONATIONS_ADDRESS } from '@/constants'
 
 import { LinkIcon, SettingsIcon } from '@/components/icons'
 import RelayerTotal from '@/components/withdraw/RelayerTotal'
@@ -388,7 +384,7 @@ export default {
         this.isFileError = false
         this.isLoading = true
         this.getProgress(0)
-        await getTornadoKeys(this.getProgress)
+        await gettornadoKeys(this.getProgress)
         return true
       } catch (err) {
         console.error('getKeys has error:', err.message)
@@ -500,9 +496,6 @@ export default {
     },
     timePastToRender() {
       this.timePassed = this.$moment.unix(this.depositTimestamp).fromNow(true)
-    },
-    insertDonate() {
-      this.withdrawAddress = DONATIONS_ADDRESS
     }
   }
 }
@@ -524,7 +517,7 @@ export default {
     bottom: 0;
     width: var(--width-animation);
     height: 100%;
-    background-color: #94febf;
+    background-color: #ecce8e;
     animation-fill-mode: backwards;
   }
 

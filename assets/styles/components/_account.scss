@@ -17,13 +17,13 @@
 
   &-box {
     margin: 1.25rem 0;
-    background-color: #171717;
+    background-color: #270722;
     border-radius: 6px;
     transition: box-shadow 0.5s linear;
 
     .address {
       border-radius: 6px;
-      background: #1f1f1f;
+      background: #270722;
       padding: 1rem 1.429rem;
 
       &-item {
@@ -98,7 +98,7 @@
 
           input[type='checkbox'] {
             + .check {
-              background-color: #313131;
+              background-color: #270722;
               box-shadow: none;
             }
 

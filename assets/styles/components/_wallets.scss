@@ -23,10 +23,10 @@
     height: auto;
 
     &.is-black {
-      background-color: #559774;
+      background-color: #EED298;
 
       &:hover {
-        background-color: #94febf;
+        background-color: #ECCE8E;
       }
     }
 
@@ -35,7 +35,7 @@
       background-color: #7ddaa9;
 
       &:hover {
-        background-color: #94febf;
+        background-color: #ECCE8E;
       }
     }
 
@@ -87,8 +87,8 @@
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border-top-width: 0;
-        border-color: #559774;
-        background-color: #559774;
+        border-color: #EED298;
+        background-color: #EED298;
         height: 1.929rem;
         color: $primary-invert;
 
@@ -98,7 +98,7 @@
         }
 
         &:focus {
-          border-color: #559774;
+          border-color: #EED298;
           box-shadow: none;
         }
       }

@@ -18,7 +18,7 @@
     .button {
       &.is-primary.is-outlined {
         &:not(.is-hovered):focus {
-          background-color: #0e1f17;
+          background-color: #270722;
           border-color: $primary;
           color: $primary;
         }
@@ -172,7 +172,7 @@
       color: #878887;
 
       &:before {
-        background-color: #538968;
+        background-color: #ECCE8E;
       }
     }
 
@@ -366,14 +366,14 @@
       }
 
       &.is-spent {
-        border-color: #538968;
+        border-color: #ECCE8E;
 
         .lock {
           background-color: #060a08;
-          border-color: #538968;
+          border-color: #ECCE8E;
 
           &:after {
-            background-color: #538968;
+            background-color: #ECCE8E;
           }
         }
       }

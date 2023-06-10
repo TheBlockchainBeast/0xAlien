@@ -7,7 +7,7 @@ import { cachedEventsLength, eventsType } from '@/constants'
 
 import MulticallABI from '@/abis/Multicall.json'
 import InstanceABI from '@/abis/Instance.abi.json'
-import TornadoProxyABI from '@/abis/TornadoProxy.abi.json'
+import tornadoProxyABI from '@/abis/tornadoProxy.abi.json'
 
 import { ACTION, ACTION_GAS } from '@/constants/variables'
 import { graph, treesInterface, EventsFactory } from '@/services'
@@ -24,7 +24,7 @@ import {
   buffPedersenHash
 } from '@/utils'
 
-import { buildGroth16, download, getTornadoKeys } from './snark'
+import { buildGroth16, download, gettornadoKeys } from './snark'
 
 let groth16
 
@@ -136,7 +136,7 @@ const getters = {
     const proxyContract = tornadoRouter || tornadoProxy || tornadoProxyLight
     const { url } = rootState.settings[`netId${netId}`].rpc
     const web3 = new Web3(url)
-    return new web3.eth.Contract(TornadoProxyABI, proxyContract)
+    return new web3.eth.Contract(tornadoProxyABI, proxyContract)
   },
   currentContract: (state, getters) => (params) => {
     return getters.tornadoProxyContract(params)
@@ -736,7 +736,7 @@ const actions = {
       nullifier: note.nullifier
     }
 
-    const { circuit, provingKey } = await getTornadoKeys()
+    const { circuit, provingKey } = await gettornadoKeys()
 
     if (!groth16) {
       groth16 = await buildGroth16()

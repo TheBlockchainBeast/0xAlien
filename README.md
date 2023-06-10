@@ -1,4 +1,4 @@
-# Tornado Cash Classic UI
+# tornado Cash Classic UI
 
 > UI for non-custodial Ethereum Privacy solution
 
@@ -27,7 +27,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## Audit
 
-[TornadoCash_Classic_dApp_audit_Decurity.pdf](https://tornado.cash/audits/TornadoCash_Classic_dApp_audit_Decurity.pdf)
+[tornadoCash_Classic_dApp_audit_Decurity.pdf](https://tornado.cash/audits/tornadoCash_Classic_dApp_audit_Decurity.pdf)
 
 ## Update cached files
 

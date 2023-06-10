@@ -341,7 +341,7 @@ const actions = {
 
     if (isSanctioned) {
       window.onbeforeunload = null
-      window.location = 'https://twitter.com/TornadoCash/status/1514904975037669386'
+      window.location = 'https://twitter.com/tornadoCash/status/1514904975037669386'
     }
   },
   async onNetworkChanged({ state, getters, commit, dispatch }, { netId }) {

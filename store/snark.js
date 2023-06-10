@@ -23,7 +23,7 @@ function getEns() {
   return new ENS({ provider, ensAddress: getEnsAddress('1') })
 }
 
-async function getTornadoKeys(getProgress) {
+async function gettornadoKeys(getProgress) {
   try {
     const keys = await Promise.all([
       download({ name: 'tornado.json.zip', contentType: 'string' }),
@@ -110,4 +110,4 @@ async function download({ name, contentType, getProgress, eventName = 'events' }
   }
 }
 
-export { getTornadoKeys, buildGroth16, download }
+export { gettornadoKeys, buildGroth16, download }

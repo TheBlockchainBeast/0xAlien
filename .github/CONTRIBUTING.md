@@ -1,6 +1,6 @@
-# Welcome to TornadoCash!
+# Welcome to tornadoCash!
 
-If you're submitting code to TornadoCash, there are some simple things we'd appreciate you doing to help us stay organized!
+If you're submitting code to tornadoCash, there are some simple things we'd appreciate you doing to help us stay organized!
 
 ### Finding the right project
 

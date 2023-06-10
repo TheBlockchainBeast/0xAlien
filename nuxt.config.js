@@ -44,7 +44,7 @@ export default {
     fallback: true
   },
   head: {
-    title: 'Tornado.cash',
+    title: '0xAlien',
     meta: [
       { charset: 'utf-8' },
       {
@@ -69,7 +69,7 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Tornado.Cash'
+        content: '0xAlien'
       },
       {
         hid: 'og:description',
@@ -79,7 +79,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://tornado.cash'
+        content: 'https://0xalien.com'
       },
       {
         hid: 'og:type',
@@ -89,7 +89,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://tornado.cash/tw.png'
+        content: 'https://0xalien.com/tw.png'
       },
       {
         hid: 'description',
@@ -100,7 +100,7 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'Tornado, Ethereum, ERC20, dapp, smart contract, decentralized, metamask, zksnark, zero knowledge'
+          'tornado, Ethereum, ERC20, dapp, smart contract, decentralized, metamask, zksnark, zero knowledge'
       }
     ],
     link: [
@@ -112,7 +112,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#94febf', height: '5px', duration: 5000 },
+  loading: { color: '#ECCE8E', height: '5px', duration: 5000 },
   /*
    ** Global CSS
    */
@@ -236,7 +236,7 @@ export default {
   // todo make custom loading page
   loadingIndicator: {
     name: 'circle',
-    color: '#94febf',
+    color: '#ECCE8E',
     background: '#000'
   }
 }

@@ -20,14 +20,14 @@ const link = ({ getContext }) => {
 }
 
 const CHAIN_GRAPH_URLS = {
-  1: 'https://api.thegraph.com/subgraphs/name/tornadocash/mainnet-tornado-subgraph',
-  5: 'https://api.thegraph.com/subgraphs/name/tornadocash/goerli-tornado-subgraph',
-  10: 'https://api.thegraph.com/subgraphs/name/tornadocash/optimism-tornado-subgraph',
-  56: 'https://api.thegraph.com/subgraphs/name/tornadocash/bsc-tornado-subgraph',
-  100: 'https://api.thegraph.com/subgraphs/name/tornadocash/xdai-tornado-subgraph',
-  137: 'https://api.thegraph.com/subgraphs/name/tornadocash/matic-tornado-subgraph',
-  42161: 'https://api.thegraph.com/subgraphs/name/tornadocash/arbitrum-tornado-subgraph',
-  43114: 'https://api.thegraph.com/subgraphs/name/tornadocash/avalanche-tornado-subgraph'
+  1: 'https://api.thegraph.com/subgraphs/name/0xAliencash/mainnet-0xAlien-subgraph',
+  5: 'https://api.thegraph.com/subgraphs/name/0xAliencash/goerli-0xAlien-subgraph',
+  10: 'https://api.thegraph.com/subgraphs/name/0xAliencash/optimism-0xAlien-subgraph',
+  56: 'https://api.thegraph.com/subgraphs/name/0xAliencash/bsc-0xAlien-subgraph',
+  100: 'https://api.thegraph.com/subgraphs/name/0xAliencash/xdai-0xAlien-subgraph',
+  137: 'https://api.thegraph.com/subgraphs/name/0xAliencash/matic-0xAlien-subgraph',
+  42161: 'https://api.thegraph.com/subgraphs/name/0xAliencash/arbitrum-0xAlien-subgraph',
+  43114: 'https://api.thegraph.com/subgraphs/name/0xAliencash/avalanche-0xAlien-subgraph'
 }
 
 const defaultOptions = {
@@ -44,7 +44,7 @@ const client = new ApolloClient({
 })
 
 const registryClient = new ApolloClient({
-  uri: 'https://api.thegraph.com/subgraphs/name/tornadocash/tornado-relayer-registry',
+  uri: 'https://api.thegraph.com/subgraphs/name/0xAliencash/0xAlien-relayer-registry',
   cache: new InMemoryCache(),
   defaultOptions
 })

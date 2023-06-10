@@ -400,7 +400,7 @@
   {
     "inputs": [],
     "name": "userVault",
-    "outputs": [{ "internalType": "contract ITornadoVault", "name": "", "type": "address" }],
+    "outputs": [{ "internalType": "contract ItornadoVault", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
   },

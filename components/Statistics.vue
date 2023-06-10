@@ -1,5 +1,5 @@
 <template>
-  <div class="column is-half">
+  <div class="column">
     <div class="box-stats">
       <div class="tab-with-corner is-left-top">
         {{ $t('statistics') }}

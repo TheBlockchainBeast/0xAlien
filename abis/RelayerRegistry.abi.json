@@ -208,7 +208,7 @@
         "type": "address"
       },
       {
-        "internalType": "contract ITornadoInstance",
+        "internalType": "contract ItornadoInstance",
         "name": "pool",
         "type": "address"
       }
@@ -530,7 +530,7 @@
         "type": "address"
       }
     ],
-    "name": "setTornadoRouter",
+    "name": "settornadoRouter",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -601,7 +601,7 @@
     "name": "staking",
     "outputs": [
       {
-        "internalType": "contract ITornadoStakingRewards",
+        "internalType": "contract ItornadoStakingRewards",
         "name": "",
         "type": "address"
       }

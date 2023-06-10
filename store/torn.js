@@ -138,7 +138,7 @@ const actions = {
       const govInstance = rootGetters['governance/gov/govContract']({ netId })
 
       const domain = {
-        name: 'TornadoCash',
+        name: 'tornadoCash',
         version: '1',
         chainId: netId,
         verifyingContract: getters.tokenContract._address
