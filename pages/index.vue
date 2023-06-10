@@ -13,68 +13,6 @@
       <i18n path="binanceInternalTxsNotification" />
     </b-notification>
 
-    <b-notification
-      :active="isActiveNotification.third"
-      class="main-notification"
-      type="is-warning"
-      icon-pack="icon"
-      has-icon
-      :aria-close-label="$t('closeNotification')"
-      @close="disableNotification({ key: 'third' })"
-    >
-      <i18n path="trustBanner.trustLess">
-        <template v-slot:link>
-          <a href="https://0xalien.com/">{{ $t('trustBanner.link') }}</a>
-        </template>
-      </i18n>
-    </b-notification>
-
-    <b-notification
-      :active="isActiveNotification.first"
-      class="main-notification"
-      type="is-info"
-      icon-pack="icon"
-      has-icon
-      :aria-close-label="$t('closeNotification')"
-      @close="disableNotification({ key: 'first' })"
-    >
-      <i18n path="indexNotification">
-        <template v-slot:link>
-          <a
-            href="https://twitter.com/tornadoCash/status/1204745639759884289"
-            target="_blank"
-            rel="noopener noreferrer"
-            >{{ $t('indexNotificationLinkText') }}</a
-          >
-        </template>
-      </i18n>
-    </b-notification>
-
-    <b-notification
-      v-if="isEthLink"
-      :active="isActiveNotification.ethLink"
-      class="main-notification"
-      type="is-warning"
-      icon-pack="icon"
-      has-icon
-      :aria-close-label="$t('closeNotification')"
-      @close="disableNotification({ key: 'ethLink' })"
-    >
-      <i18n path="ethLinkBanner.notification">
-        <template v-slot:issue>
-          <a
-            href="https://discuss.ens.domains/t/eth-link-expiry/13899"
-            target="_blank"
-            rel="noopener noreferrer"
-            >{{ $t('ethLinkBanner.issue') }}</a
-          >
-        </template>
-        <template v-slot:alternative>
-          <a href="https://0xalien.com/">{{ $t('ethLinkBanner.alternative') }}</a>
-        </template>
-      </i18n>
-    </b-notification>
-
     <div class="columns">
       <div class="column is-half">
         <b-tabs v-model="activeTab" class="is-tornado" :animated="false" @input="tabChanged">
